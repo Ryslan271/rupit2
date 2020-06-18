@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="static\css.css" href="img" rel='stylesheet' type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>RuPit</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        color: var(--color-text-main);
+        font-family: var(--yandex-sans);
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #a1 {
+        color: #c7c5c5;
+        font-size: 26px;
+    }
+
+    #div_content6 {
+        background-color: rgb(54, 53, 53);
+        border-radius: 10px;
+        padding: 5px;
+        width: 1180px;
+        height: 670px;
+        margin: 0 auto;
+        line-height: 1.7;  
+    }
+
+    .a1{
+        color: #9ea2c5;
+    }
+
+    #h12 {
+        font-size: 35px;
+        color: rgb(37, 37, 37);
+    }
+</style>
+<body>
+    <div>
+        <div id="header" style="width: 100%;">
+            <h1>
+                <a href='/content' id='atop'>Ru<span style="color: aquamarine;">Pit</span>:</a>
+                <a href='/content' id='atop' style="float: right;">Lili</a>
+                Урок №2
+                <a href="/#" id='alogin' style="float: right; margin-right: 80px;">Menu</a>
+            </h1>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="/Знакомство со средой" id="about">№1 Знакомство со средой</a>
+        <a href="/Знакомство с циклами" id="blog" style="top: 178px;">№3 Знакомство с циклами</a>
+        <a href="/Знакомство со списками и словарями" id="projects" style="top: 260px">№4 Списки и словари</a>
+        <a href="/Функции" id="contact" style="top: 318px;">№5 Функции</a>
+    </div>
+    <div id="div1" style="height: 31000px; margin-bottom: 50px;">
+        <div style="height: 30px;"></div>
+
+        <div style="margin-left: 320px;">
+            <h1 id="h12" >Урок №2: Простые встроенные функции</h1>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 2750px;">
+            <h1 id="h1" style="margin-left: 25px;">Доп. Условный оператор</h1>
+            <p id="p_1">Условный оператор используется, когда некая часть программы должна быть выполнена, только если верно какое-либо условие. Для записи условного оператора используются ключевые слова if и else («если», «иначе»), двоеточие, а также отступ в четыре пробела.</p>
+            <div id="div_content_prog" style="width: 430px; height: 280px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">if </span>  условие:</p>
+                <p id="p_1" style="margin-left: 60px;">Действия, если условие верно</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">else</span>:</p>
+                <p id="p_1" style="margin-left: 60px;">Действия, если условие неверно</p>
+            </div>
+        
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">PEP 8</h1>
+                <p id="p_1" style="color: #e6e9d2;">Отступ в 4 пробела принят в сообществе Python (PEP 8). При этом программа может работать и при других вариантах, но читать её будет неудобно. Пробелы — самый предпочтительный метод отступов. Табуляция должна использоваться только для поддержки кода, написанного с отступами с помощью табуляции. Python 3 запрещает смешивание табуляции и пробелов в отступах.</p>
+            </div>
+
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Определение</h1>
+                <p id="p_1" style="color: #e6e9d2;">Сравнение — это проверка, которая не меняет значение переменной (в сравнении может вообще не быть переменных), а присваивание — команда, которая меняет значение переменной. Для сравнения нужно использовать двойной знак равенства: ==.
+                    Также заметьте, что после else никогда не пишется никакого условия.</p>
+            </div>
+
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_prog" style="width: 400px; height: 400px;">
+                <p id="p_1">Пример:</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>('<span style="color: #4d6dff;">Представься, о незнакомец!</span>')</p>
+                <p id="p_1">name = <span style="color: #6dc993;">input</span>()</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">if</span> name == '<span style="color: #4d6dff;">Цезарь</span>':</p>
+                <p id="p_1" style="margin-left: 60px;"><span style="color: #ff7700; font-weight: bold;">print</span>('<span style="color: #4d6dff;">Аве, Цезарь!</span>')</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">else</span>:</p>
+                <p id="p_1" style="margin-left: 60px;"><span style="color: #ff7700; font-weight: bold;" >print</span>('<span style="color: #4d6dff;">Приветик.</span>')</p>
+            </div>
+            <p id="p_1">В качестве условия можно использовать и другие операции отношения:</p>
+
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_v" style="width: 280px; height: 310px; margin: 0 auto;">
+                <p id="p_1">< меньше ; > больше</p>
+                <p id="p_1"><= меньше или равно</p>
+                <p id="p_1">>= больше или равно</p>
+                <p id="p_1">== равно</p>
+                <p id="p_1">!= не равно</p>
+            </div>
+
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">PEP 8</h1>
+                <p id="p_1" style="color: #e6e9d2;">Все операции отношения окружаются пробелами с двух сторон.</p>
+                <p id="p_1" style="color: #e6e9d2;">Правильно: if bird == "Тук-тук":</p>
+                <p id="p_1" style="color: #e6e9d2;"><span style="text-decoration: line-through;">Неправильно</span>: if bird=="Тук-тук":</p>
+            </div>
+            <p id="p_1">Объекты любой однородной группы можно сравнивать между собой. Подумайте над тем, как можно сравнивать, например, строки.</p>
+            <p id="p_1">Советуем вам ознакомится с <a href="https://www.opennet.ru/docs/RUS/diveinto_python/apihelper_andor.html" style="color: #9ea2c5;" target="_blank">or</a> , <a href="https://www.opennet.ru/docs/RUS/diveinto_python/apihelper_andor.html" style="color: #9ea2c5;" target="_blank">and</a> и <a href="https://pythonru.com/uroki/operatory-v-python-uroki-po-python-dlja-nachinajushhih" style="color: #9ea2c5;" target="_blank">in</a></p>
+            <p id="p_1">Можете лучше ознакомится с операторами на  <a href="http://pythonicway.com/python-operators" style="color: #9ea2c5;" target="_blank">сайте</a> или же на <a href="https://rtfm.co.ua/books-translations/python_s_nulya/python-s-nulya-chast-3-bazovye-operatory/" style="color: #9ea2c5;" target="_blank">этом</a></p>
+            <p id="p_1">В будущем это вам понадобиться :D</p>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 3200px;">
+            <h1 id="h1" style="margin-left: 25px;">1. Типы данных. Числовые типы</h1>
+            <p id="p_1">Пока единственным типом данных, с которым мы работали, были строки. Теперь нам предстоит рассмотреть целые и вещественные числа. У каждого элемента данных, который встречается в программе, есть свой тип. (В случае Python более правильный термин — «класс объекта», но об этом мы будем говорить гораздо позже.)</p>
+            <p id="p_1">Например, «привет» — это строка, а вот 15.3 — это число (дробное). Даже если данные не записаны прямо в программе, а получаются откуда-то ещё, у них есть совершенно определённый тип. Например, на место input() всегда подставляется строка, а 2 + 2 даст именно число 4, а не строку «4».</p>
+            <p id="p_1">Пользователь может ввести с клавиатуры какие-то цифры, но в результате input() вернёт строку, состоящую из этих цифр. Если мы попытаемся, например, прибавить к этой строке 1, то получим ошибку.</p>
+            <p id="p_1">Давайте попробуем это сделать:</p>
+
+            <div id="div_content_prog" style="width: 200px; height: 100px;">
+                <p id="p_1">a = <span style="color: #6dc993;">input</span>()</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(a + 1)</p>
+            </div>
+            <p id="p_1">Сохраните и запустите программу.</p>
+            <p id="p_1">Введите любое число и посмотрите, что получится.</p>
+            <p id="p_1">Ошибка возникнет потому, что в переменную а у нас попадает строка, а в функции print мы пытаемся эту строку из переменной а и число 1. Исправьте программу так, чтобы она работала.</p>
+            <p id="p_1">А если нам надо работать с числами? Мы пока будем рассматривать целые и вещественные числа.</p>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно</h1>
+                <p id="p_1" style="color: #e6e9d2;">Когда речь идет о числовых данных — они записываются без <span style="color: #f5ffb4;">кавычек</span>. </p>
+                <p id="p_1" style="color: #e6e9d2;">А для вещественных чисел — для разделения целой и дробной части используют <span style="color: #f5ffb4;">точку</span>.</p>
+            </div>
+
+            <p id="p_1">На прошлом занятии мы складывали две строки:</p>
+
+            <div id="div_content_prog" style="width: 220px; height: 60px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>('<span style="color: #4d6dff;">10</span>' + '<span style="color: #4d6dff;">20</span>') </p>
+            </div>
+
+            <p id="p_1">И получали результат — строку «1020».</p>
+            <p id="p_1">Давайте попробуем в этом примере убрать кавычки. В таком случае речь пойдёт уже не о строках, а о двух целых числах.</p>
+            <p id="p_1">И результатом функции print(10 + 20) будет целое число 30.</p>
+            <p id="p_1">А если мы попробуем сложить два вещественных числа print(10.0 + 20.0), то результатом будет вещественное число 30.0.</p>
+            <p id="p_1">Попробуйте предположить что будет, если сложить вещественное число и целое число print(10.0 + 20). Почему?</p>
+            <p id="p_1">Мы выполняли сложение двух чисел внутри функции print, но мы можем переменным давать нужные значение и выполнять действия над переменными.</p>
+            <p id="p_1">Давайте напишем программу, которая задаст нужные значения двум переменным (10 и 20), потом вычислит их сумму, положит это значение в третью переменную и выведет на экран полученный результат. Допишите начальные строки, чтобы программа решала поставленную задачу:</p>
+
+            <div id="div_content_prog" style="width: 220px; height: 60px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(summ)</p>
+            </div>
+
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно</h1>
+                <p id="p_1" style="color: #e6e9d2;">Обратите внимание, что если в качестве имени переменной для суммы взять sum, то оно выделяется цветом. Это означает, что такое имя знакомо среде и принадлежит какой-то функции, в качестве имени переменной его лучше не использовать.</p>
+            </div>
+
+            <p id="p_1">Как складывать два числа мы научились. Еще числа можно вычитать, умножать, делить, возводить в степень, получать целую часть от деления и остаток от деления нацело. Давайте разберём эти операции на примерах.</p>
+
+            <div id="div_content_prog" style="width: 220px; height: 200px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">30</span> - <span style="color: #ff4500; font-weight: bold;">10</span>)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">30.0</span> - <span style="color: #ff4500; font-weight: bold;">10</span>)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">3</span> * <span style="color: #ff4500; font-weight: bold;">3</span>)</p>
+            </div>
+
+            <p id="p_1">С вычитанием и умножением все понятно, они аналогичны сложению.</p>
+            <p id="p_1">Возведение в степень обозначается двумя звёздочками **, которые должны записываться без разделителей.</p>
+
+            <div id="div_content_prog" style="width: 200px; height: 60px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">9</span> ** <span style="color: #ff4500; font-weight: bold;">2</span>)</p>
+            </div>
+
+            <p id="p_1">Обратите внимание, что результат деления — всегда вещественный, даже если мы делим два целых числа, которые делятся нацело.</p>
+
+            <div id="div_content_prog" style="width: 200px; height: 60px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">10</span> / <span style="color: #ff4500; font-weight: bold;">2</span>)</p>
+            </div>
+
+            <p id="p_1">Попробуйте поделить на 0. Посмотрите, как будет выглядеть ошибка деления на 0.</p>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 1900px;">
+            <h1 id="h1" style="margin-left: 25px;">2. Операции над числами. Целочисленное деление</h1>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно</h1>
+                <p id="p_1" style="color: #e6e9d2;">Для реализации целочисленного деления существуют два действия — деление нацело и остаток от деления нацело. Получение целой части от деления обозначается как удвоенный знак деления //, а остатка от деления нацело — %.</p>
+            </div>
+
+            <p id="p_1">Давайте подробнее разберём эти операции. Что будет выведено в результате этих действий?</p>
+
+            <div id="div_content_prog" style="width: 300px; height: 230px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">10</span> // <span style="color: #ff4500; font-weight: bold;">3</span>, <span style="color: #ff4500; font-weight: bold;">10</span> % <span style="color: #ff4500; font-weight: bold;">3</span>)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">10</span> // <span style="color: #ff4500; font-weight: bold;">5</span>, <span style="color: #ff4500; font-weight: bold;">10</span> % <span style="color: #ff4500; font-weight: bold;">5</span>)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">10</span> // <span style="color: #ff4500; font-weight: bold;">11</span>, <span style="color: #ff4500; font-weight: bold;">10</span> % <span style="color: #ff4500; font-weight: bold;">11</span>)</p>
+            </div>
+
+            <p id="p_1">Допустим, вам известны результаты a // b, a % b и число b, напишите формулу, как найти число a?</p>
+            <p id="p_1">Давайте проверим вашу формулу:</p>
+
+            <div id="div_content_prog" style="width: 450px; height: 230px; padding: 3px;">
+                <p id="p_1">a = <span style="color: #ff4500; font-weight: bold;">10</span></p>
+                <p id="p_1">b = <span style="color: #ff4500; font-weight: bold;">3</span></p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(….А сюда напишем формулу…)</p>
+            </div>
+
+            <p id="p_1">Обратите внимание на порядок выполнения действий в вашей формуле. Целочисленное деление имеет тот же приоритет, что и обычное деление, значит, будет выполнятся раньше, чем вычитание и сложение. Для изменения приоритета выполнения операций используются скобки, все также, как и в математике.</p>
+            <p id="p_1">А теперь, немного разобравшись с этими операциями, попробуйте предположить, что выведется на экран после выполнения следующего куска кода:</p>
+
+            <div id="div_content_prog" style="width: 300px; height: 150px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #ff4500; font-weight: bold;">10</span> // <span style="color: #ff4500; font-weight: bold;">3</span>, <span style="color: #ff4500; font-weight: bold;">10</span> % <span style="color: #ff4500; font-weight: bold;">3</span>)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>( - <span style="color: #ff4500; font-weight: bold;">10</span> // <span style="color: #ff4500; font-weight: bold;">3</span>, - <span style="color: #ff4500; font-weight: bold;">10</span> % <span style="color: #ff4500; font-weight: bold;">3</span>)</p>
+            </div>
+
+            <p id="p_1">Определите, что будет выведено на экран?</p>
+
+            <div id="div_content_prog" style="width: 260px; height: 250px; padding: 3px;">
+                <p id="p_1">a = <span style="color: #ff4500; font-weight: bold;">4</span></p>
+                <p id="p_1">b = <span style="color: #ff4500; font-weight: bold;">15</span></p>
+                <p id="p_1">c = b / <span style="color: #ff4500; font-weight: bold;">5</span> * <span style="color: #ff4500; font-weight: bold;">3</span> - a</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(c)</p>
+            </div>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 1400px;">
+            <h1 id="h1" style="margin-left: 25px;">3. Приоритет операций</h1>
+
+            <p id="p_1">Мы уже с вами изучили несколько типов операторов в языке Python:</p>
+            <p id="p_1">— операторы присваивания (=, +=, -=, *= и т.д.)</p>
+            <p id="p_1">— операторы сравнения (==, !=, >, <, >=, <=)</p>
+            <p id="p_1">— арифметические операторы (+, -, *, //, %, **)</p>
+            <p id="p_1">— логические операторы (and, or, not)</p>
+            <p id="p_1">Есть и другие, мы с ними познакомимся позднее. Все эти операторы могут использоваться совместно в довольно сложных конструкциях, поэтому нужно помнить о приоритете операций, и в случае необходимости менять его при помощи скобок.</p>
+            <p id="p_1">Итак, приоритет выполнения операторов в Python от наивысшего (выполняется первым) до наинизшего:</p>
+
+            <p id="p_1">1. Возведение в степень (**)</p>
+            <p id="p_1">2. Унарный минус (-). Используется для получения, например, противоположного числа.</p>
+            <p id="p_1">3. Умножение, деление (* / % //)</p>
+            <p id="p_1">4. Сложение и вычитание (+ -)</p>
+            <p id="p_1">5. Операторы сравнения (<= < > >=)</p>
+            <p id="p_1">6. Операторы равенства (== !=)</p>
+            <p id="p_1">7. Операторы присваивания (=)</p>
+            <p id="p_1">8. Логические операторы (not or and)</p>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно: PEP 8</h1>
+                <p id="p_1" style="color: #e6e9d2;">Если используются операторы с разными приоритетами, попробуйте добавить пробелы вокруг операторов с самым низким приоритетом. Руководствуйтесь своими собственными суждениями, но никогда не используйте более одного пробела и всегда используйте одинаковое количество пробелов по обе стороны бинарного оператора.</p>
+            </div>
+        </div>
+        
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 3200px;">
+            <h1 id="h1" style="margin-left: 25px;">4. Простейшие функции</h1>
+            <p id="p_1">С действиями над числами определились, осталось разобраться, как получать числа из ввода. Здесь нам поможет важное новое понятие — функция. В математике функция из одного числа (или даже нескольких) делает другое.</p>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Функция</h1>
+                <p id="p_1" style="color: #e6e9d2;">В программировании (и в Python в частности): функция — это сущность, которая из одного (или даже нескольких) значений делает другое. При этом она может ещё и выполнять какие-то действия. Например, есть функция модуля у = |x|, аналогично в Python есть функция y = abs(x). Но функции в Python необязательно принимают только числа.</p>
+            </div>
+
+            <p id="p_1">Для того, чтобы вводить числа с клавиатуры и далее работать с ними, нам необходимо найти функцию, которая из строки делает число. И такие функции есть!</p>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно</h1>
+                <p id="p_1" style="color: #e6e9d2;">Тип данных целых чисел в Python называется int, дробных чисел — float.</p>
+                <p id="p_1" style="color: #e6e9d2;">Одноимённые функции принимают в качестве аргумента строку и возвращают число, если в этой строке было записано число (иначе выдают ошибку):</p>
+            </div>
+
+            <div style="height: 30px;"></div>
+
+            <div id="div_content_prog" style="width: 260px; height: 220px; padding: 3px;">
+                <p id="p_1">a = <span style="color: #6dc993;">input</span>()</p>
+                <p id="p_1">b = <span style="color: #6dc993;">int</span>(a)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(b + <span style="color: #ff4500; font-weight: bold;">1</span>)</p>
+            </div>
+
+            <p id="p_1">Или можно написать даже так:</p>
+
+            <div id="div_content_prog" style="width: 200px; height: 80px; padding: 3px;">
+                <p id="p_1">a = <span style="color: #6dc993;">int</span>(<span style="color: #6dc993;">input</span>())</p>
+            </div>
+
+            <p id="p_1">что будет означать — получи строку из ввода, сделай из неё целое число и результат помести в переменную а.</p>
+            <p id="p_1">И тогда предыдущая программа может быть записана в виде:</p>
+
+            <div id="div_content_prog" style="width: 200px; height: 150px; padding: 3px;">
+                <p id="p_1">a = <span style="color: #6dc993;">int</span>(<span style="color: #6dc993;">input</span>())</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(a + <span style="color: #ff4500; font-weight: bold;">1</span>)</p>
+            </div>
+
+            <p id="p_1">Но можно сократить код еще, написав вот так:</p>
+
+            <div id="div_content_prog" style="width: 230px; height: 80px; padding: 3px;">
+                <p id="p_1">a = <span style="color: #6dc993;">int</span>(<span style="color: #6dc993;">input</span>() + <span style="color: #ff4500; font-weight: bold;">1</span>)</p>
+            </div>
+
+            <p id="p_1">Функция int может быть применена и для получения целого числа из вещественного — в таком случае, дробная часть будет отброшена (без округления).</p>
+            <p id="p_1">Например,</p>
+
+            <div id="div_content_prog" style="width: 280px; height: 80px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(<span style="color: #6dc993;">int</span>(<span style="color: #ff4500; font-weight: bold;">20.5</span> + <span style="color: #ff4500; font-weight: bold;">34.1</span>))</p>
+            </div>
+
+            <p id="p_1">выдаст на экран число 54, хотя если сложить эти числа и не отправлять их в фунцкию int, результат будет 54.6.</p>
+            <p id="p_1">В Python cуществует огромное количество различных функций, мы будем знакомиться с ними постепенно. Так, например, для строки можно так же определить её длину.</p>
+
+            
+
+        </div>
+    </div>
+
+
+    <div style="height: 30px;"></div>
+
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+                }
+                }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

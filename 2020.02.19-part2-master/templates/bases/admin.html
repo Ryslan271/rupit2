@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="static\css.css" href="Osnova" rel='stylesheet' type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Lili</title>
+<style>
+    body {
+        background-color:rgb(189, 188, 188);
+        color: var(--color-text-main);
+        font-family: var(--yandex-sans);
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    
+    
+    .div1{
+        outline: 2px solid rgb(255, 251, 251);
+        width: 150px;
+        height: 35px;
+        margin:0 auto;
+    }
+
+    .shadow-4:hover {
+    box-shadow:0 0 6px 6px #555; 
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+
+    .shadow-4 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }   
+
+    .title {
+        color: grey;
+        font-size: 18px;
+        }
+
+    .button1 {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        }
+
+    .a1 {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+        }
+
+    .button1:hover, a:hover {
+        opacity: 0.7;
+        }
+    p {
+        color: black;
+    }
+    .vl {
+        border-left: 6px solid green;
+        height: 500px;
+    }   
+    ul li {
+        color: rgb(236, 236, 236);
+        font-size: 26px;
+    }
+    ul li:first-line  {
+        font-size: 30px;
+        color: #c7c5c5;
+    }
+
+    #ali {
+        color: #c7c5c5;
+    }
+    </style>
+</head>
+<body>
+    <div id="header" style="width: 100%;">
+        <h1>
+            <a href='/' id='atop'>Ru<span style="color: aquamarine;">Pit</span>:</a>
+            <a href='/' id='atop' style="float: right;">Lili</a>
+            Admin
+            <div style="float: right; margin-right: 10px; margin-top: 10px;" id="timedisplay"></div>
+        </h1>
+        <script type="text/javascript">
+            function getDate()
+            {
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+                if(seconds < 10)
+                {
+                    seconds = '0' + seconds;
+                }
+                document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+            setInterval(getDate, 0);
+        </script>
+    </div>
+    <div style="float: left; background-color: rgb(59, 59, 59); width: 300px; height: 91vh;">
+        <div>
+            <ul id="">
+                <li><a href="/" id="ali">Главная</a></li>
+                <li><a href="/Admin" id="ali">Общие данные</a></li>
+                <li><a href="/Admin_bd" id="ali">База данных</a></li>
+            </ul>
+        </div>
+        <div style="position: absolute; bottom: 20px; margin-left: 80px;">
+            <p id="p_1" style="color: rgb(255, 255, 255);"><a id="ali" style=" text-decoration: none;" href="delete_log">Выйти</a></p>
+        </div>
+    </div>
+    <div style="margin: 0 auto;">
+        <div style="height: 30px;"></div>
+        <div id="div_content" style="margin: 0 auto; margin-left: 2%; width: 1500px; height: 850px;">
+            {% block content %}
+            <h1 id="h1">Пользователи:</h1>
+            <hr style="color: #c7c5c5; width: 800px;">
+               <table>
+                   <td style="vertical-align: top;">
+                        {% for post in User %} 
+                            {% if post.id <= 12 %}
+                                <p id="p_1">id: <span style="color: rgb(255, 145, 0);">{{ post.id }}</span> - {{ post.login }} </p>
+                            {% endif %}
+                        {% endfor %}
+                   </td>
+                   <td style="width: 20px;"></td>
+                   <td style="vertical-align: top;">
+                        {% for post in User %} 
+                            {% if post.id > 12 and post.id <= 24 %}
+                                <p id="p_1">id: <span style="color: rgb(255, 145, 0);">{{ post.id }}</span> - {{ post.login }} </p>
+                            {% endif %}
+                        {% endfor %}
+                   </td>
+                   <td style="width: 20px;"></td>
+                   <td style="vertical-align: top;">
+                    {% for post in User %} 
+                        {% if post.id > 24 and post.id <= 36 %}
+                            <p id="p_1">id: <span style="color: rgb(255, 145, 0);">{{ post.id }}</span> - {{ post.login }} </p>
+                        {% endif %}
+                    {% endfor %}
+                   </td>
+                   <td style="width: 20px;"></td>
+                   <td style="vertical-align: top;">
+                    {% for post in User %} 
+                        {% if post.id > 36 and post.id <= 48 %}
+                            <p id="p_1">id: <span style="color: rgb(255, 145, 0);">{{ post.id }}</span> - {{ post.login }} </p>
+                        {% endif %}
+                    {% endfor %}
+                   </td>
+                   <td style="width: 20px;"></td>
+                   <td style="vertical-align: top;">
+                    {% for post in User %} 
+                        {% if post.id > 48 and post.id <= 60 %}
+                            <p id="p_1">id: <span style="color: rgb(255, 145, 0);">{{ post.id }}</span> - {{ post.login }} </p>
+                        {% endif %}
+                    {% endfor %}
+                   </td>
+               </table>
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

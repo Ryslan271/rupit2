@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="static\css.css" href="img" rel='stylesheet' type="text/css" />
+    <meta charset="UTF-8">
+    {% if reg %}
+        <title>Вход</title>
+    {% else %}
+        <title>Регистрация</title>
+    {% endif %}
+</head>
+<body>
+    <style>
+        .body2 {
+        background: url(my-image.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+        }
+
+        body {
+        font-family: 'Lato', sans-serif;
+        }
+    
+        .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+        }
+    
+        .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        outline: 2px solid rgb(255, 251, 251);
+        width: 300px;
+        height: 400px;
+        margin:0 auto;
+        }
+    
+        .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+    
+        .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        }
+    
+        .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        }
+    
+        @media screen and (max-height: 450px) {
+        .overlay {overflow-y: auto;}
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+        
+        .div1{
+            outline: 2px solid rgb(255, 251, 251);
+            width: 150px;
+            height: 35px;
+            margin:0 auto;
+        }
+
+        .div2 {
+            outline: 2px solid rgb(255, 251, 251);
+            width: 300px;
+            height: 400px;
+            margin:0 auto;
+        }
+    
+        .body2 {
+            background: url(my-image.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background: linear-gradient(90deg, #aed4b1 , #8d998f, #555353);
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+    </head>
+    <body class="body2">
+        <div>
+            <div id="header" style="width: 100%;">
+                <h1>
+                    <a href='/' id='atop'>Ru<span style="color: aquamarine;">Pit</span>:</a>
+                    <a href='/' id='atop' style="float: right;">Lili</a> 
+                    {% if reg %}
+                        Вход  
+                        <a href="/register" id='alogin' style="float: right; margin-right: 110px;">Register</a>
+                    {% else %}
+                        Регистрация
+                        <a href="/login" id='alogin' style="float: right; margin-right: 80px;">Login</a>
+                    {% endif %}
+                </h1>
+            </div>
+        </div>
+            <ul id="navbar" style="height: 60px; width: 150px;">
+                <li><a href="/" id="">Книги</a></li>
+                {% if reg %}
+                    <li><a href="register" class="ali">Регистрация</a></li>
+                {% else %}
+                    <li><a href="login" class="ali">Войти</a></li>
+                {% endif %}
+            </ul>
+        <div class="div2">
+            {% block content %}
+                {% for post in User %}
+                    <div class="post">
+                        <div class="title">{{ post.login }} ({{ post.formated_date() }})</div>
+                        <div class="content">{{ post.password_page }}</div>
+                    </div>
+                {% endfor %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

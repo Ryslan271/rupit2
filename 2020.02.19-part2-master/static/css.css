@@ -1,0 +1,239 @@
+#header {
+    margin-top: 0;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+
+}
+
+#header h1 {
+    padding: 20px;
+    margin: 0;
+    color: #ffffff;
+}
+
+#atop {
+    font-size: 40px;
+    color: #ffffff;
+	padding: 5px; 
+	border-radius: 2px;
+    margin-top: 2px;
+    font-family: 'Monotype Corsiva';
+    text-decoration: none;
+}
+
+#div1 {
+    background-color: rgb(189, 188, 188);
+    margin: 0 auto;
+    width: 1300px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+#div_content {
+    background-color: rgb(54, 53, 53);
+    margin: 0 auto;
+    width: 500px;
+    height: 530px;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+#div_content2 {
+    background-color: rgb(54, 53, 53);
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#div_content3 {
+    background-color: rgb(54, 53, 53);
+    border-radius: 10px;
+    width: 605px;
+    height: 300px;
+}
+
+#div_content4 {
+    background-color: rgb(54, 53, 53);
+    border-radius: 10px;
+    width: 1240px;
+    height: 550px;
+    margin-left: 30px;
+}
+
+#div_content_prog {
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#div_content_v {
+    background: rgba(24, 23, 21, 0.733);
+    border-radius: 10px;
+    padding: 5px;
+    width: 1180px;
+    height: 300px;
+    margin: 0 auto;
+    line-height: 1.5;  
+}
+
+#h11 {
+    color: rgb(255, 249, 196);
+    margin-left: 25px;
+    font-size: 33px;
+}
+
+#ulleft {
+    box-shadow: 0.2em 0.4em 14px rgba(0, 0, 0, 0.5);
+    float: left;
+    width: 170px;
+    height: 350px;
+    background: radial-gradient(at top, #FEFFFF, #A7CECC);
+    outline: 2px solid rgb(177, 173, 173);
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#alogin {
+    font-size: 40px;
+    color: #ffffff;
+	padding: 5px; 
+	border-radius: 2px;
+    margin-top: 2px;
+    font-family: 'Monotype Corsiva';
+    width: 15px;
+    margin-right: 70px;
+}
+
+#div_os {
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#p_1 {
+    font-size: 23px;
+    color: #c7c5c5;
+    margin: 25px;
+    line-height: 1.5;  
+}
+
+#h1 {
+    font-size: 33px;
+    color: #ffffff;
+}
+
+#h1_1 {
+    font-size: 35px;
+}
+
+#a_content {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navbar {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 150px;
+}
+
+#navbar li {
+    border-left: 10px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+#navbar a {
+    background-color: #949494;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 5px solid #33ADFF;
+    display: block;
+}
+
+#navbar li:hover { 
+    border-radius: 5px;
+}
+
+#uldown {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}
+
+#img_min {
+    width: 150px;
+}
+
+#div_img {
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 30px;
+}
+
+#mySidenav a {
+    position: absolute; 
+    left: -210px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 220px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+}
+
+#mySidenav a:hover {
+    left: 0; 
+}
+
+#about {
+    top: 120px;
+    background-color: #555;
+}
+
+#blog {
+    top: 200px;
+    background-color: #555; 
+}
+
+#projects {
+    top: 280px;
+    background-color: #555;
+}
+
+#contact {
+    top: 338px;
+    background-color: #555;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
